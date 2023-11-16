@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario con 3 campos</title>
+</head>
+
+<body>
+
+
+    <p>PRODUCTO</p>
+    <form action="localhost:8080/api/products" method="get">
+        <input type="submit" value="Consultar">
+    </form>
+    <br>
+    <form action="localhost:8080/api/products" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="descripcion">Descripcion:</label>
+        <input type="text" name="descripcion" id="descripcion">
+
+        <label for="precio">precio:</label>
+        <input type="text" name="precio" id="precio">
+
+        <label for="categoria">categoria:</label>
+        <input type="text" name="categoria" id="categoria">
+
+        <label for="descripcion">visible:</label>
+        <input type="text" name="productovisible" id="productovisible">
+
+        <input type="submit" value="Guardar">
+    </form>
+
+    <p>CATEGORIA</p>
+    <form action="guardar.php" method="post">
+        <label for="nombrecategoria">Nombre:</label>
+        <input type="text" name="nombrecategoria" id="nombrecategoria">
+
+        <label for="visiblecategoria">visible:</label>
+        <input type="text" name="visiblecategoria" id="visiblecategoria">
+
+        <input type="submit" value="Guardar">
+    </form>
+
+</body>
+</html>
